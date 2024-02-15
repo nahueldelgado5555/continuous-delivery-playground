@@ -45,7 +45,7 @@ jobs:
       - name: Upload artifacts
         uses: actions/upload-artifact@v3
         with:
-          name: modern-web-app-v${{ github.sha }}
+          name: modern-web-app-${{ github.sha }}
           path: modern-web-app/.next/
 
   deploy-prod:
